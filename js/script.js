@@ -6,16 +6,16 @@
 
 'use strict'
 /**
- * This function calculates the area of a triangle.
+ * This function calculates the volume of a pyramid
  */
 function calculate () {
   // input
-  const baseA = parseInt(document.getElementById("base-A").value)
-  const baseB = parseInt(document.getElementById("base-B").value)
-  const height = parseInt(document.getElementById("height-of-trapezoid").value)
+  const length = parseInt(document.getElementById("length").value)
+  const width= parseInt(document.getElementById("width").value)
+  const height = parseInt(document.getElementById("height").value)
   // process
-  const area = [(baseA + baseB)/ 2] * height
+  const volume = (length * width * height) / 3
   // output
-  document.getElementById("area").innerHTML =
-    "The area is: " + area + ' mm²' 
+  document.getElementById("volume").innerHTML =
+    "The volume is: " + volume + ' mm³' 
 }
