@@ -17,5 +17,5 @@ function calculate () {
   const volume = (length * width * height) / 3
   // output
   document.getElementById("volume").innerHTML =
-    "The volume is: " + volume + ' mm³' 
+    "The volume is: " + volume.toFixed(2) + ' mm³' 
 }
